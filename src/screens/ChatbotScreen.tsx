@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 
-export default function App() {
+export default function ChatbotScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.txt}>QHealth – struktur segera lengkap</Text>
-      <StatusBar style="light" />
+      <Text style={styles.title}>AI Health Assistant</Text>
+      <Text style={styles.sub}>Chat segera hadir</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#121212' },
-  txt: { color: '#1E88E5', fontSize: 18 },
+  title: { fontSize: 24, color: '#FFF' },
+  sub: { fontSize: 14, color: '#B0BEC5', marginVertical: 8 },
 });
